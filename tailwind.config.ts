@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Travel-themed colors
+				explorer: 'hsl(var(--explorer-blue))',
+				heritage: 'hsl(var(--heritage-gold))',
+				stone: 'hsl(var(--warm-stone))',
+				teal: 'hsl(var(--discovery-teal))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
