@@ -123,6 +123,8 @@ const Index = () => {
                 description={tour.description}
                 duration={tour.duration}
                 stops={tour.stops}
+                rating={tour.rating}
+                reviewCount={tour.reviewCount}
                 image={tour.image}
                 onStartTour={() => handleStartTour(tour.title)}
               />
@@ -147,6 +149,8 @@ const Index = () => {
                   description={tour.description}
                   duration={tour.duration}
                   stops={tour.stops}
+                  rating={tour.rating}
+                  reviewCount={tour.reviewCount}
                   image={tour.image}
                   onStartTour={() => handleStartTour(tour.title)}
                 />
