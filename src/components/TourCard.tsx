@@ -1,18 +1,17 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, MapPin, Users } from "lucide-react";
+import { Clock, MapPin } from "lucide-react";
 
 interface TourCardProps {
   title: string;
   description: string;
   duration: string;
   stops: number;
-  difficulty: string;
   image: string;
   onStartTour: () => void;
 }
 
-const TourCard = ({ title, description, duration, stops, difficulty, image, onStartTour }: TourCardProps) => {
+const TourCard = ({ title, description, duration, stops, image, onStartTour }: TourCardProps) => {
   return (
     <Card className="overflow-hidden group hover:shadow-[var(--shadow-tour-card)] transition-all duration-300 hover:-translate-y-1">
       <div className="relative overflow-hidden">
@@ -38,14 +37,7 @@ const TourCard = ({ title, description, duration, stops, difficulty, image, onSt
       </div>
       
       <div className="p-6">
-        <p className="text-muted-foreground mb-4 line-clamp-2">{description}</p>
-        
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            <Users className="w-4 h-4" />
-            {difficulty}
-          </div>
-        </div>
+        <p className="text-muted-foreground mb-6 line-clamp-2">{description}</p>
         
         <Button 
           onClick={onStartTour}
