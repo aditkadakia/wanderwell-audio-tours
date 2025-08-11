@@ -52,11 +52,16 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Travel-themed colors
-				explorer: 'hsl(var(--explorer-blue))',
+				// Traditional Indian-inspired colors
+				saffron: 'hsl(var(--saffron))',
+				marigold: 'hsl(var(--marigold))',
+				turmeric: 'hsl(var(--turmeric))',
+				terracotta: 'hsl(var(--terracotta))',
+				'deep-red': 'hsl(var(--deep-red))',
 				heritage: 'hsl(var(--heritage-gold))',
 				stone: 'hsl(var(--warm-stone))',
-				teal: 'hsl(var(--discovery-teal))',
+				'earth-brown': 'hsl(var(--earth-brown))',
+				'temple-orange': 'hsl(var(--temple-orange))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

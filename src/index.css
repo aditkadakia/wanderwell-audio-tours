@@ -8,44 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 20 14% 97%;
-    --foreground: 210 20% 15%;
+    --background: 45 25% 96%;
+    --foreground: 15 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 20% 15%;
+    --card: 40 30% 98%;
+    --card-foreground: 15 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 20% 15%;
+    --popover: 40 30% 98%;
+    --popover-foreground: 15 30% 15%;
 
-    --primary: 210 70% 25%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 25 80% 45%;
+    --primary-foreground: 45 25% 96%;
 
-    --secondary: 35 25% 90%;
-    --secondary-foreground: 210 20% 15%;
+    --secondary: 45 35% 88%;
+    --secondary-foreground: 15 30% 15%;
 
-    --muted: 35 15% 92%;
-    --muted-foreground: 210 15% 45%;
+    --muted: 45 25% 90%;
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 35 70% 60%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 35 75% 55%;
+    --accent-foreground: 45 25% 96%;
 
-    /* Travel-inspired colors */
-    --explorer-blue: 210 70% 25%;
-    --heritage-gold: 35 70% 60%;
-    --warm-stone: 35 25% 85%;
-    --discovery-teal: 180 60% 35%;
+    /* Traditional Indian-inspired colors */
+    --saffron: 35 85% 60%;
+    --marigold: 45 90% 65%;
+    --turmeric: 50 80% 55%;
+    --terracotta: 15 70% 50%;
+    --deep-red: 5 75% 45%;
+    --heritage-gold: 45 85% 55%;
+    --warm-stone: 35 25% 75%;
+    --earth-brown: 25 40% 35%;
+    --temple-orange: 25 85% 55%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--explorer-blue)), hsl(var(--discovery-teal)));
+    /* Indian-inspired gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--marigold)));
     --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--warm-stone)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--heritage-gold)), hsl(35 80% 70%));
+    --gradient-temple: linear-gradient(135deg, hsl(var(--temple-orange)), hsl(var(--terracotta)));
+    --gradient-sunset: linear-gradient(135deg, hsl(var(--deep-red)), hsl(var(--heritage-gold)));
+    --gradient-spice: linear-gradient(135deg, hsl(var(--turmeric)), hsl(var(--saffron)));
     
-    /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(var(--explorer-blue) / 0.08);
-    --shadow-elevated: 0 8px 30px hsl(var(--explorer-blue) / 0.12);
-    --shadow-tour-card: 0 6px 25px hsl(var(--explorer-blue) / 0.1);
+    /* Warm shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--saffron) / 0.15);
+    --shadow-elevated: 0 8px 30px hsl(var(--temple-orange) / 0.2);
+    --shadow-tour-card: 0 6px 25px hsl(var(--heritage-gold) / 0.25);
+    --shadow-temple: 0 8px 32px hsl(var(--terracotta) / 0.18);
     
-    /* Transitions */
+    /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -76,26 +84,26 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 15 25% 8%;
+    --foreground: 45 20% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 20 30% 10%;
+    --card-foreground: 45 20% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 20 30% 10%;
+    --popover-foreground: 45 20% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 80% 55%;
+    --primary-foreground: 15 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 45 20% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 20% 15%;
+    --muted-foreground: 35 15% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 75% 60%;
+    --accent-foreground: 15 25% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
