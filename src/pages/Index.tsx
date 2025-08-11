@@ -45,7 +45,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-2xl text-white">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-serif">
-                Discover Bharat's
+                Discover India's
                 <span className="block bg-gradient-to-r from-saffron to-marigold bg-clip-text text-transparent">Heritage</span>
               </h1>
               <p className="text-lg sm:text-xl mb-8 opacity-90">
