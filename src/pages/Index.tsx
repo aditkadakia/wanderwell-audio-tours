@@ -9,6 +9,7 @@ import { Search, Star, MapPin, Headphones } from "lucide-react";
 import { tours } from "@/data/tours";
 import { useToast } from "@/hooks/use-toast";
 import mumbaiHero from "@/assets/mumbai-hero.jpg";
+import safarLogo from "@/assets/safar-logo-clean.png";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -38,25 +39,25 @@ const Index = () => {
           alt="Mumbai Heritage Tour"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-earth-brown/80 to-terracotta/50" />
         
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-2xl text-white">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Discover Cities
-                <span className="block text-heritage">Your Way</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-serif">
+                Discover Bharat's
+                <span className="block bg-gradient-to-r from-saffron to-marigold bg-clip-text text-transparent">Heritage</span>
               </h1>
               <p className="text-lg sm:text-xl mb-8 opacity-90">
-                Self-guided audio walking tours that bring history, culture, and hidden stories to life. No crowds, no schedules - just you and the city.
+                Immersive audio walking tours through India's cultural treasures. Experience centuries of heritage, stories, and traditions at your own pace.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="tour" className="text-lg px-8 py-3">
+                <Button size="lg" className="text-lg px-8 py-3 bg-gradient-to-r from-saffron to-heritage text-white hover:from-heritage to-saffron shadow-[var(--shadow-temple)] hover:shadow-[var(--shadow-elevated)] transition-all">
                   <Headphones className="w-5 h-5 mr-2" />
-                  Start Exploring
+                  Start Your Safar
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-white/10 border-white/30 text-white hover:bg-white/20">
-                  Browse Tours
+                <Button size="lg" variant="outline" className="text-lg px-8 py-3 bg-white/10 border-saffron/30 text-white hover:bg-saffron/20 hover:border-saffron/50">
+                  Browse Heritage Tours
                 </Button>
               </div>
             </div>
@@ -65,7 +66,7 @@ const Index = () => {
       </section>
 
       {/* Search & Stats */}
-      <section className="py-12 bg-white border-b">
+      <section className="py-12 bg-gradient-to-b from-background to-warm-stone/30 border-b border-saffron/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="relative">
@@ -75,7 +76,7 @@ const Index = () => {
                 placeholder="Search tours or cities..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-12 py-3 text-lg border-2 border-stone/30 focus:border-explorer"
+                className="pl-12 py-3 text-lg border-2 border-saffron/30 focus:border-heritage shadow-[var(--shadow-soft)] focus:shadow-[var(--shadow-temple)]"
               />
             </div>
           </div>
@@ -83,15 +84,15 @@ const Index = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-explorer mb-2">50+</div>
+              <div className="text-3xl font-bold text-heritage mb-2">50+</div>
               <div className="text-muted-foreground">Audio Tours</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-explorer mb-2">12</div>
+              <div className="text-3xl font-bold text-heritage mb-2">12</div>
               <div className="text-muted-foreground">Cities Covered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-explorer mb-2">4.8</div>
+              <div className="text-3xl font-bold text-heritage mb-2">4.8</div>
               <div className="flex items-center justify-center gap-1 text-muted-foreground">
                 <Star className="w-4 h-4 fill-heritage text-heritage" />
                 Average Rating
@@ -135,7 +136,7 @@ const Index = () => {
 
       {/* All Tours */}
       {searchQuery && (
-        <section className="py-16 bg-stone/20">
+        <section className="py-16 bg-gradient-to-b from-warm-stone/20 to-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-bold text-foreground mb-8">
               Search Results ({filteredTours.length})
@@ -169,7 +170,7 @@ const Index = () => {
       )}
 
       {/* How It Works */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-background to-warm-stone/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
@@ -178,7 +179,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-gradient-to-r from-explorer to-teal p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-gradient-to-r from-saffron to-heritage p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-[var(--shadow-temple)]">
                 <span className="text-white text-xl font-bold">1</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Choose Your Tour</h3>
@@ -186,7 +187,7 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-gradient-to-r from-explorer to-teal p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-gradient-to-r from-heritage to-temple-orange p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-[var(--shadow-temple)]">
                 <span className="text-white text-xl font-bold">2</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Start Walking</h3>
@@ -194,7 +195,7 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-gradient-to-r from-explorer to-teal p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+              <div className="bg-gradient-to-r from-temple-orange to-terracotta p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-[var(--shadow-temple)]">
                 <span className="text-white text-xl font-bold">3</span>
               </div>
               <h3 className="text-xl font-semibold mb-2">Discover & Learn</h3>
@@ -205,21 +206,25 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-explorer text-white py-12">
+      <footer className="bg-gradient-to-r from-earth-brown to-terracotta text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="bg-heritage p-2 rounded-lg">
-                  <MapPin className="w-6 h-6 text-white" />
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-to-br from-saffron to-heritage p-2">
+                  <img 
+                    src={safarLogo} 
+                    alt="Safar Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold">WalkWise</h1>
-                  <p className="text-sm text-white/80">Audio City Tours</p>
+                  <h1 className="text-xl font-bold font-serif">Safar</h1>
+                  <p className="text-sm text-white/80">Heritage Audio Tours</p>
                 </div>
               </div>
               <p className="text-white/80 mb-4">
-                Transforming how you explore cities with immersive, self-guided audio experiences that bring destinations to life.
+                Embark on a journey through India's rich cultural heritage with immersive audio experiences that bring history and traditions to life.
               </p>
             </div>
             
@@ -245,7 +250,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2024 WalkWise. All rights reserved.</p>
+            <p>&copy; 2024 Safar. All rights reserved.</p>
           </div>
         </div>
       </footer>
